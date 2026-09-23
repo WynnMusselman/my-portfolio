@@ -14,7 +14,27 @@ body{
     min-height: 100vh;
 }
 
-#welcome-wrapper{
+/* text */
+
+h1{
+    color: white;
+    font: calc(2px + 5vw) monospace;
+}
+
+h2{
+    color: white;
+    font: calc(2px + 4vw) monospace;
+    margin: 4%;
+}
+
+p{
+    color: white;
+    font: calc(2px + 1.8vw) monospace;
+}
+
+/* binary and hello world */
+
+header{
     position: relative;
 }
 
@@ -37,33 +57,57 @@ body{
 
 
 #welcome-wrapper h1{
-    
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically */
+    /* justify-content: center; 
+    align-items: center;      */
 
-    color: white;
     z-index: 10;
-
-    font: calc(2px + 5vw) monospace;
 }
 
+
+/* more info when you scroll down */
 #more-info{
     position: relative;
     top: 110vh;
-}
 
-#more-info img{
-    z-index: 10;
-    margin: 4%;
+    margin: auto;
+    width: 90%;
 
-    
+    /* fade in animation on div */
     animation: fadeIn;
     animation-timeline: view();
 }
 
-#more-info p{
-    color: white;
-    font: calc(2px + 2vw) monospace;
+#more-info img{
+    z-index: 10;
+    /* margin: 2%; */
+}
+
+/* for two column layout */
+.two-col{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+
+.left-inner-col{
+    width: 40%;
+}
+
+.right-inner-col{
+    width: 60%;
+}
+
+.left-inner-col img{
+    max-width: 90vh;
+
+}
+
+.two-col p{
+    padding-top: 5%;
+    margin: auto;
+    text-align: left;
 }
 
 
