@@ -38,11 +38,15 @@ header{
     position: relative;
 }
 
+header p{
+    color: yellowgreen;
+}
+
 /* binary numbers */
 #binary-wrapper{
     /* position: relative; */
     position: absolute;
-    opacity: 20%;
+    opacity: 25%;
     z-index: -1;
     
 }
@@ -65,7 +69,7 @@ header{
 
 
 /* more info when you scroll down */
-#more-info{
+main{
     position: relative;
     top: 110vh;
 
@@ -75,11 +79,6 @@ header{
     /* fade in animation on div */
     animation: fadeIn;
     animation-timeline: view();
-}
-
-#more-info img{
-    z-index: 10;
-    /* margin: 2%; */
 }
 
 /* for two column layout */
@@ -100,14 +99,20 @@ header{
 }
 
 .left-inner-col img{
-    max-width: 90vh;
-
+    max-width: 30vw;
 }
 
 .two-col p{
     padding-top: 5%;
     margin: auto;
     text-align: left;
+}
+
+.two-col .left-inner-col .img-caption{
+    color: greenyellow;
+    font: italic calc(2px + 1.1vw) monospace;
+    text-align: center;
+    padding-top: 0;
 }
 
 
