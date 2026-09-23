@@ -11,16 +11,18 @@ function get_rand_number(){
     return rand_num;
 }
 
+function create_binary_str(){
+    for (let i = 0; i < NUM_LINES; i++){
+        const binary_str = document.createElement("p");
+        binary_str.className = "binary-line";
 
-for (let i = 0; i < NUM_LINES; i++){
-    const binary_str = document.createElement("p");
-    binary_str.className = "binary-line";
+        binary_str.textContent = binary_options[get_rand_number()];
+        binary_str.style.color = color_options[get_rand_number()];
 
-    binary_str.textContent = binary_options[get_rand_number()];
-    binary_str.style.color = color_options[get_rand_number()];
-
-    binary_str.style.top = `${Math.floor(Math.random() * 20)}vh`;
-    binary_str.style.animationDuration = `${Math.floor(Math.random() * 40) + 20}s`;
-    binary_str.style.zIndex = -1;
-    binary_wrapper.appendChild(binary_str);
+        binary_str.style.top = `${Math.floor(Math.random() * 20)}vh`;
+        binary_str.style.animationDuration = `${Math.floor(Math.random() * 40) + 20}s`;
+        binary_str.style.zIndex = -1;
+        binary_wrapper.appendChild(binary_str);
+    }
 }
+create_binary_str();
