@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: black;
+
+    /* makes it so user cant scroll to the side of the page. page is fixed width */
+    max-width: 100%;
+    overflow-x: hidden;
+
+    min-height: 100vh;
+}
+
+#welcome-wrapper{
+    position: relative;
+}
+
+/* binary numbers */
+#binary-wrapper{
+    /* position: relative; */
+    position: absolute;
+    opacity: 20%;
+    z-index: -1;
+    
+}
+
+.binary-line{
+    animation: scroll 10s linear infinite;
+    /* position: absolute; */
+    white-space: nowrap;
+    right: 20vw;
+    font: calc(2px + 5vw) monospace;
+}
+
+
+#welcome-wrapper h1{
+    
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+
+    color: white;
+    z-index: 10;
+
+    font: calc(2px + 5vw) monospace;
+}
+
+#more-info{
+    position: relative;
+    top: 110vh;
+}
+
+#more-info img{
+    z-index: 10;
+    margin: 4%;
+
+    
+    animation: fadeIn;
+    animation-timeline: view();
+}
+
+#more-info p{
+    color: white;
+    font: calc(2px + 2vw) monospace;
+}
+
+
+/* binary scroll animation */
+
+@keyframes scroll{
+    0%{
+        transform: translateX(100%);
+    }
+    100% { 
+        transform: translateX(-100%); 
+    }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
