@@ -29,10 +29,10 @@ h2{
 
 p{
     color: white;
-    font: calc(2px + 1.8vw) monospace;
+    font: calc(2px + 1.5vw) monospace;
 }
 
-/* binary and hello world */
+/* header - binary and hello world */
 
 header{
     position: relative;
@@ -40,6 +40,12 @@ header{
 
 header p{
     color: yellowgreen;
+}
+
+header h1, header p{
+    position: relative;
+    z-index: 10;
+    top: 40vh;
 }
 
 /* binary numbers */
@@ -57,14 +63,6 @@ header p{
     white-space: nowrap;
     right: 20vw;
     font: calc(2px + 5vw) monospace;
-}
-
-
-#welcome-wrapper h1{
-    /* justify-content: center; 
-    align-items: center;      */
-
-    z-index: 10;
 }
 
 
