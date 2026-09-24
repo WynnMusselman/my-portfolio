@@ -22,6 +22,7 @@ function create_binary_str(){
         binary_str.style.top = `${Math.floor(Math.random() * 20)}vh`;
         binary_str.style.animationDuration = `${Math.floor(Math.random() * 40) + 20}s`;
         binary_str.style.zIndex = -1;
+        
         binary_wrapper.appendChild(binary_str);
     }
 }
