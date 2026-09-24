@@ -33,12 +33,16 @@ create_binary_str();
 
 //---------------------reveals text in option buttons-------------------------
 function revealP(p_tag){
-    // let p1 = document.getElementById("p1");
 
-    if (p_tag.style.checkVisibility === "visible"){
-        p_tag.style.visibility = "hidden"
+    if (p_tag.style.display === "none"){
+        p_tag.style.display = "inline"
     }
     else{
-        p_tag.style.visibility = "visible";
+        p_tag.style.display = "none";
     }
+}
+
+function revealP1(){
+    let p1 = document.getElementById("button-p1-text");
+    revealP(p1);
 }
