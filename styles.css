@@ -32,19 +32,59 @@ p{
     font: calc(2px + 1.5vw) monospace;
 }
 
+nav{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+/* nav bar */
+nav ul{
+    text-align: center;
+    padding-left: none;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    padding: 2%;
+}
+
+nav ul li a{
+    opacity: 100%;
+    color: cyan;
+    font: calc(2px + 1.5vw) monospace;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    font-style: italic;
+    font-weight: bold;
+   
+}
+
 /* header - binary and hello world */
 
 header{
     position: relative;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    /* centering text */
     justify-content: center;  /* horizontal */
     align-items: center;      /* vertical */
+
+    /* z-index: 10; */
 }
 
 header p{
     color: yellowgreen;
 }
+
 
 /* binary numbers */
 #binary-wrapper{
@@ -67,7 +107,6 @@ header p{
 /* more info when you scroll down */
 main{
     position: relative;
-    top: 110vh;
 
     margin: auto;
     width: 90%;
