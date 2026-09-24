@@ -27,6 +27,12 @@ h2{
     margin: 4%;
 }
 
+h3{
+    color: white;
+    font: italic bold calc(2px + 2vw) monospace;
+    margin: 4%;
+}
+
 p{
     color: white;
     font: calc(2px + 1.5vw) monospace;
@@ -150,6 +156,29 @@ main{
     padding-top: 0;
 }
 
+/* info buttons section */
+
+
+#info-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#info-buttons h3{
+    color: black;
+}
+
+#info-buttons p{
+    visibility: hidden;
+}
+
+#button-option{
+    width: 33%;
+    padding: 2%;
+    margin: 4% 2%;
+    background: hsl(300, 32%, 60%);
+}
 
 /* binary scroll animation */
 

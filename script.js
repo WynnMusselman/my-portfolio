@@ -1,7 +1,8 @@
+// ------------------- lines of binary text ----------------------------------
+
 const binary_wrapper = document.getElementById("binary-wrapper");
 const NUM_LINES = 8; //number of binary text lines
 
-// Hello World!, Welcome, Wynn Musselman
 const binary_options = ["01001000 01100101 01101100 01101100", "01010111 01100101 01101100 01100011", "01010111 01111001 01101110 01101110"];
 const color_options = ["green", "darkgreen", "greenyellow"]
 
@@ -16,14 +17,28 @@ function create_binary_str(){
         const binary_str = document.createElement("p");
         binary_str.className = "binary-line";
 
+        //does the styling for the binary lines 
         binary_str.textContent = binary_options[get_rand_number()];
         binary_str.style.color = color_options[get_rand_number()];
 
         binary_str.style.top = `${Math.floor(Math.random() * 20)}vh`;
         binary_str.style.animationDuration = `${Math.floor(Math.random() * 40) + 20}s`;
-        binary_str.style.zIndex = -1;
+        binary_str.style.zIndex = -1; //binary is at the very bottom of the z-index
         
-        binary_wrapper.appendChild(binary_str);
+        binary_wrapper.appendChild(binary_str); //adds to existing class
     }
 }
 create_binary_str();
+
+
+//---------------------reveals text in option buttons-------------------------
+function revealP(p_tag){
+    // let p1 = document.getElementById("p1");
+
+    if (p_tag.style.checkVisibility === "visible"){
+        p_tag.style.visibility = "hidden"
+    }
+    else{
+        p_tag.style.visibility = "visible";
+    }
+}
