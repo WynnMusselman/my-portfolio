@@ -157,7 +157,7 @@ main{
 }
 
 /* info buttons section */
-
+/* 
 #three-col{
     display: flex;
     flex-direction: row;
@@ -174,7 +174,6 @@ main{
 }
 
 #button-p-text p{
-    /* display: none; */
     visibility: hidden;
 }
 
@@ -187,7 +186,7 @@ main{
 
 .button-option:hover{
     background: hsl(300, 32%, 60%);
-}
+} */
 
 /* binary scroll animation */
 
