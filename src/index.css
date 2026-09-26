@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: black;
+
+    /* makes it so user cant scroll to the side of the page. page is fixed width */
+    max-width: 100%;
+    overflow-x: hidden;
+
+    min-height: 100vh;
+}
+
+/* text */
+
+h1{
+    color: white;
+    font: calc(2px + 5vw) monospace;
+}
+
+h2{
+    color: white;
+    font: calc(2px + 4vw) monospace;
+    margin: 4%;
+}
+
+h3{
+    color: white;
+    font: italic bold calc(2px + 2vw) monospace;
+    margin: 4%;
+}
+
+p{
+    color: white;
+    font: calc(2px + 1.5vw) monospace;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+/* nav bar */
+nav ul{
+    text-align: center;
+    padding-left: none;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    padding: 2%;
+}
+
+nav ul li a{
+    opacity: 100%;
+    color: cyan;
+    font: calc(2px + 1.5vw) monospace;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    font-style: italic;
+    font-weight: bold;
+   
+}
+
+/* header - binary and hello world */
+
+header{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* centering text */
+    justify-content: center;  /* horizontal */
+    align-items: center;      /* vertical */
+
+    /* z-index: 10; */
+}
+
+header p{
+    color: yellowgreen;
+}
+
+
+/* binary numbers */
+#binary-wrapper{
+    /* position: relative; */
+    position: absolute;
+    opacity: 25%;
+    z-index: -1;
+    
+}
+
+.binary-line{
+    animation: scroll 10s linear infinite;
+    /* position: absolute; */
+    white-space: nowrap;
+    right: 20vw;
+    font: calc(2px + 5vw) monospace;
+}
+
+
+/* more info when you scroll down */
+main{
+    position: relative;
+
+    margin: auto;
+    width: 90%;
+
+    /* fade in animation on div */
+    animation: fadeIn;
+    animation-timeline: view();
+}
+
+/* for two column layout */
+.two-col{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+
+.left-inner-col{
+    width: 40%;
+}
+
+.right-inner-col{
+    width: 60%;
+}
+
+.left-inner-col img{
+    max-width: 25vw;
+}
+
+.two-col p{
+    padding-top: 5%;
+    margin: auto;
+    text-align: left;
+}
+
+.two-col .left-inner-col .img-caption{
+    color: greenyellow;
+    font: italic calc(2px + 1.1vw) monospace;
+    text-align: center;
+    padding-top: 0;
+}
+
+footer{
+    margin-top: 4%;
+    padding: 1%;
+    background-color: rgb(32, 29, 29)
+}
+
+footer p, footer a{
+    color: rgb(9, 181, 181);
+    font: calc(2px + 1vw) monospace;
+}
+
+
+@keyframes scroll{
+    0%{
+        transform: translateX(100%);
+    }
+    100% { 
+        transform: translateX(-100%); 
+    }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
