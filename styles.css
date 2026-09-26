@@ -156,6 +156,17 @@ main{
     padding-top: 0;
 }
 
+footer{
+    margin-top: 4%;
+    padding: 1%;
+    background-color: rgb(32, 29, 29)
+}
+
+footer p, footer a{
+    color: rgb(9, 181, 181);
+    font: calc(2px + 1vw) monospace;
+}
+
 /* info buttons section */
 /* 
 #three-col{
