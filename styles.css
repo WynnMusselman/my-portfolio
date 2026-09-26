@@ -167,39 +167,6 @@ footer p, footer a{
     font: calc(2px + 1vw) monospace;
 }
 
-/* info buttons section */
-/* 
-#three-col{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.info-buttons{
-    flex-direction: column;
-    width: 100%;
-}
-
-.info-buttons h3{
-    color: black;
-}
-
-#button-p-text p{
-    visibility: hidden;
-}
-
-.button-option{
-    width: 33%;
-    padding: 2%;
-    margin: 4% 2%;
-    background: hsl(300, 32%, 60%);
-}
-
-.button-option:hover{
-    background: hsl(300, 32%, 60%);
-} */
-
-/* binary scroll animation */
 
 @keyframes scroll{
     0%{
